@@ -88,7 +88,7 @@ class _DashBoardPageState extends State<DashBoardPage> {
                         activeDotColor: Colors.blue),
                     // your preferred effect
                     onDotClicked: (index) => _controller.animateToPage(index,
-                        duration: Duration(microseconds: 500),
+                        duration: Duration(seconds: 1),
                         curve: Curves.fastOutSlowIn)),
                 Container(
                   margin: EdgeInsets.all(10),
@@ -171,7 +171,6 @@ class _DashBoardPageState extends State<DashBoardPage> {
                                             ConvertCurrencyPage()),
                                   );
                                 });
-
                               },
                             ),
                           ),
@@ -396,7 +395,7 @@ class _DashBoardPageState extends State<DashBoardPage> {
 
 class Button extends StatelessWidget {
   var name;
-  GestureTapCallback  onPressed;
+  GestureTapCallback onPressed;
 
   Button({required this.name, required this.onPressed});
 
